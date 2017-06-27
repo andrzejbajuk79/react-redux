@@ -1,6 +1,7 @@
 import React from 'react';
 import UserList from '../containers/user-list';
 import UserDetail from  '../containers/user-detail'
+import AddProject from  '../containers/add-user'
 require('../../scss/style.scss');
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
         <hr />
         <h2>detale pracownika:</h2>
         <UserDetail />
+        <AddProject />
     </div>
 );
 

@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import uuid from 'uuid';
+import {connect} from 'react-redux';
 
 class AddProject extends Component {
     constructor(){
@@ -11,7 +12,7 @@ class AddProject extends Component {
             newPerson :{}
         }
     }
-    
+
 
     handleSubmit(e){
         if((this.refs.name.value === '') ||
@@ -37,7 +38,7 @@ class AddProject extends Component {
     }
 
  render() {
-     let jobOptions = this.props.job.map(job => {return <option key={job} value={job}>{job}</option>});
+
     return (
       <div>
           <form onSubmit = { this.handleSubmit.bind(this)}>
